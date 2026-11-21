@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "DAYFLOW",
+  "version": "0.1.0",
+  "identifier": "com.dayflow.app",
+  "build": {
+    "beforeDevCommand": "npm run dev -- --host 0.0.0.0",
+    "devUrl": "http://localhost:5173",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [{ "title": "DAYFLOW", "width": 1440, "height": 900, "minWidth": 360, "minHeight": 640 }],
+    "security": { "csp": null }
+  },
+  "bundle": { "active": true, "targets": "all" }
+}
